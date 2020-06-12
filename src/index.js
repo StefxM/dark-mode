@@ -4,10 +4,13 @@ import axios from "axios";
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import "./styles.scss";
 
 const App = () => {
+
+ 
   const [coinData, setCoinData] = useState([]);
 
   useEffect(() => {
@@ -27,4 +30,5 @@ const App = () => {
 };
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Router><App /></Router>, rootElement);
+//Switch, Route,
