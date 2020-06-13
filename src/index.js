@@ -5,11 +5,14 @@ import axios from "axios";
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+// import Bitcoin from "./components/bitcoin";
+// import Ethereum from "./components/ethereum";
+
+
 
 import "./styles.scss";
 
 const App = () => {
-
  
   const [coinData, setCoinData] = useState([]);
 
